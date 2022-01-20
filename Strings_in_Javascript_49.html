@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Title</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nam officia adipisci sunt, quae ducimus, vitae dolor, facilis repellendus possimus doloribus. Debitis, odio!</p>
+    </div>
+
+    <script>
+        // If you want to use double quotes outside, you will use single quotes inside
+        var string1 = "This is 'Tanmay'";
+        // If you want to use single quotes outside, you will use double quotes inside
+        var string2 = 'This is "Tanmay"';
+        console.log(string1);
+        console.log(string2);
+
+        var name = "Tanmay "
+        var message = "is a good boy";
+        var channel = "Tanmay's_Coding_Materials";
+        console.log( name + message);
+
+        // template literal
+        // You can use both single and double quotes in back-ticks
+        var temp_lite = `${name}is a 'very' nice person and he has a "channel" called ${channel}.`;
+        console.log(temp_lite);
+
+        // We can calculate the length of strings
+        var name_length = name.length;
+        var message_length = message.length;
+        var channel_length = channel.length;
+        var temp_lite_length = temp_lite.length;
+
+        console.log(`The length of name is ${name_length}`);
+        console.log(`The length of message is ${message_length}`);
+        console.log(`The length of channel is ${channel_length}`);
+        console.log(`The length of temp_lite is ${temp_lite_length}`);
+
+        // Escape sequence characters
+        console.log("Hello //n World"); //New line Escape sequence character
+        console.log("Hello // World"); //Print hash Escape sequence character
+
+        // // String Constructors
+        // var St_const =new string("this");
+        // console.log(`${St_const}`);
+
+        // Inserting elements in DOM by JS
+        document.getElementById('content').innerHTML = '<h3>This is a H3 heading inserted by Javascript</h3>';
+
+    </script>
+</body>
+</html>

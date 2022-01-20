@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions in Javascript</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>This is Title</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nam officia adipisci sunt, quae ducimus, vitae dolor, facilis repellendus possimus doloribus. Debitis, odio!</p>
+    </div>
+
+    <script>
+
+        var str = "This is a String";
+        console.log(str);
+
+        // Position finding characters
+        // indexof
+        // This gives first occurrence of a string
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // lastIndexof
+        // This gives first occurrence of a string
+        var last_position = str.lastIndexOf('is');
+        console.log(last_position);
+
+        // gaining a substring from a string
+        var substr = str.slice(1,7); //It can take negative values
+        var substr = str.substring(1,7); //It can't take negative values
+        var substr1 = str.substr(1,3); //It extracts sub-stings
+        console.log(substr);
+        console.log(substr1);
+
+        // replacing substrings in a string
+        var replaced = str.replace('a String', 'Tanmay');
+        console.log(replaced);
+
+        // Case changing methods
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // String Concat element
+        var string_concat = str.concat(', New String');
+        console.log(string_concat);
+
+        // String White Spaces Trim Function
+        var whspaces = '          This is            a String.          ';
+        console.log(whspaces);
+        console.log(whspaces.trim());
+
+        // Extracting Characters from String
+        var char_extract = str.charAt(2);
+        var char_extract1 = str.charAt(5);
+        var char_extract2 = str.charAt(8);
+        console.log(char_extract);
+        console.log(char_extract1);
+        console.log(char_extract2);
+
+        var char_code_extract = str.charCodeAt(2); //This function will get you the "UTF Succeed Character Code" of the specified substring.
+        console.log(char_code_extract);
+
+        // String Slicing
+        console.log(str[2]);
+        console.log(str[5]);
+        console.log(str[8]);
+
+    </script>
+</body>
+</html>
